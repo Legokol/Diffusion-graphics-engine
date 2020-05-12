@@ -5,6 +5,10 @@
 #include "particle.h"
 
 class DrawableParticle: public Circle, public Particle {
+public:
+    void update(sf::RenderWindow &w);
+
+    void setLoc(const Vector2D &_loc);
 };
 
 
