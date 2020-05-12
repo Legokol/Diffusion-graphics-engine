@@ -6,6 +6,8 @@
 
 class DrawableParticle: public Circle, public Particle {
 public:
+    DrawableParticle(double m, double r, double* _x, double* _v);
+
     void update(sf::RenderWindow &w);
 
     void setLoc(const Vector2D &_loc);

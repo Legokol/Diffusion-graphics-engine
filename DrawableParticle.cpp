@@ -1,5 +1,9 @@
 #include "DrawableParticle.h"
 
+DrawableParticle::DrawableParticle(double m, double r, double *_x, double *_v) : Particle(m, r, _x, _v),
+                                                                                 Circle(Vector2D(_x[0], _x[1]), r) {}
+
+
 void DrawableParticle::update(sf::RenderWindow &w) {
     move();
     setLoc(loc);
