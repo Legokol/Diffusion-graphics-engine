@@ -9,8 +9,6 @@ add_executable(Diffusion_graphics_engine
         main.cpp
         particle.cpp
         particle.h
-        Object.cpp
-        Object.h
         Circle.cpp
         Circle.h
         Vector2D.cpp
