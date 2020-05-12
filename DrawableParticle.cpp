@@ -4,8 +4,8 @@ DrawableParticle::DrawableParticle(double m, double r, double *_x, double *_v) :
                                                                                  Circle(Vector2D(_x[0], _x[1]), r) {}
 
 
-void DrawableParticle::update(sf::RenderWindow &w) {
-    move();
+void DrawableParticle::update(double dt, sf::RenderWindow &w) {
+    move(dt);
     setLoc(loc);
     display(w);
 }
